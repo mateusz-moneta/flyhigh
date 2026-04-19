@@ -1,0 +1,8 @@
+{
+  "/api": {
+    "target": "http://207.154.219.113:3000",
+    "secure": false,
+    "changeOrigin": true,
+    "logLevel": "debug"
+  }
+}

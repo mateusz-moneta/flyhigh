@@ -27,6 +27,8 @@
               }
             ],
             "styles": [
+              "node_modules/@fontsource/roboto/400.css",
+              "node_modules/primeflex/primeflex.css",
               "src/styles.scss"
             ]
           },
@@ -56,6 +58,9 @@
         },
         "serve": {
           "builder": "@angular/build:dev-server",
+          "options": {
+            "proxyConfig": "./proxy.conf.json"
+          },
           "configurations": {
             "production": {
               "buildTarget": "magazine:build:production"
@@ -81,11 +86,17 @@
               }
             ],
             "styles": [
+              "node_modules/@fontsource/roboto/400.css",
+              "node_modules/primeflex/primeflex.css",
+              "node_modules/primeicons/primeicons.css",
               "src/styles.scss"
             ]
           }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }
